@@ -54,6 +54,33 @@ const projectList = [
     language: 'Python',
     updated_at: '2022-08-14',
     category: 'Social Network Analysis'
+  },
+  {
+    id: 7,
+    name: 'NYC_Subway_Ridership_sentiment_analysis',
+    description: 'Analyzed public sentiment toward NYC Subway services using Twitter data. Preprocessed tweets, performed sentiment scoring using VADER and RoBERTa, and correlated findings with MTA ridership metrics. The study revealed how online discourse aligns with actual ridership trends, offering insight for transit planning.',
+    url: 'https://github.com/lavyam/NYC_Subway_Ridership_sentiment_analysis',
+    language: 'Python',
+    updated_at: '2024-03-09',
+    category: 'NLP'
+  },
+  {
+    id: 8,
+    name: 'Americans, Trust & Twitter (Sussman Lab)',
+    description: 'Created a data-driven narrative exploring Americans’ trust in government and Twitter as news sources, using Pew survey data and political predictors. Built an interactive story using R Markdown with embedded visualizations, showing how party affiliation, citizenship, and region influence public sentiment. Conducted regression analysis, regional mapping, and comparative studies.',
+    url: '',
+    language: 'R',
+    updated_at: '2024-12-01',
+    category: 'Research'
+  },
+  {
+    id: 9,
+    name: 'MovieLens Recommender & Segmentation (Big Data Capstone)',
+    description: 'Built a collaborative filtering and customer segmentation pipeline using the 33M-rating MovieLens dataset. Applied MinHash-based similarity, validated user “twins” using Pearson correlation, and trained an ALS recommender with cold-start extensions via tag-genome regression. Evaluated all models with ranking metrics like Precision@100, MAP, and NDCG.',
+    url: 'https://lavyam.github.io/lavya-portfolio/Big%20Data%20Capstone%20Report%20-%20Team%2029.pdf',
+    language: 'Python, Spark',
+    updated_at: '2025-05-07',
+    category: 'Research'
   }
 ];
 
@@ -108,9 +135,13 @@ const Projects = () => {
                 className="border border-gray-300 dark:border-gray-700 rounded-xl p-4 bg-white dark:bg-gray-800 shadow hover:shadow-lg transition"
               >
                 <h4 className="text-xl font-semibold text-indigo-600 dark:text-indigo-300">
-                  <a href={project.url} target="_blank" rel="noopener noreferrer">
-                    {project.name}
-                  </a>
+                  {project.url ? (
+                    <a href={project.url} target="_blank" rel="noopener noreferrer">
+                      {project.name}
+                    </a>
+                  ) : (
+                    <span>{project.name}</span>
+                  )}
                 </h4>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
                   {project.description}
@@ -131,3 +162,4 @@ const Projects = () => {
 };
 
 export default Projects;
+

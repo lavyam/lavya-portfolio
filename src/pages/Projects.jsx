@@ -84,15 +84,6 @@ const projectList = [
   },
   {
     id: 10,
-    name: 'BU Spark! Demo Day – Police Budgeting Analysis',
-    description: 'Presented policy-focused insights on Boston Police Department’s $60M+ overtime budget at BU Spark! Demo Day. Used city expense data, incident-level logs, and visual storytelling to advocate reallocating funds to underfunded services.',
-    url: 'https://www.bu.edu/spark/2022/12/20/demo-day-fall-2022/',
-    language: 'Policy, Analytics',
-    updated_at: '2022-12-20',
-    category: 'Publications'
-  },
-  {
-    id: 11,
     name: 'BU Spark! Demo Day – Unconscious Bias Training Manual',
     description: 'Showcased an equity-focused digital training manual for tech companies at BU Spark! Demo Day. The project aims to combat unconscious bias in the workplace through a $5 subscription model, with waivers available for small businesses to ensure accessibility. The manual combines behavioral research, inclusive design, and policy guidance.',
     url: 'https://www.bu.edu/spark/2022/12/20/demo-day-fall-2022/',

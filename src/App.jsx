@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -13,6 +13,7 @@ const App = () => {
         <Navbar />
         <main className="px-6 py-10 max-w-6xl mx-auto">
           <Routes>
+            <Route path="/" element={<Navigate to="/about" replace />} />
             <Route path="/" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/resume" element={<Resume />} />

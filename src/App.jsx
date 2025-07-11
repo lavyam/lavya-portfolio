@@ -14,7 +14,7 @@ const App = () => {
         <main className="px-6 py-10 max-w-6xl mx-auto">
           <Routes>
             <Route path="/" element={<Navigate to="/about" replace />} />
-            <Route path="/" element={<About />} />
+            <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/contact" element={<Contact />} />

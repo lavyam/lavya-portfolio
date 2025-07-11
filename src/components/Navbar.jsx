@@ -4,7 +4,7 @@ import { Moon, Sun } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const navItems = [
-  { label: 'About', path: '/' },
+  { label: 'About', path: '/about' },
   { label: 'Projects', path: '/projects' },
   { label: 'Resume', path: '/resume' },
   { label: 'Contact', path: '/contact' }

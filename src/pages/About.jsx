@@ -18,10 +18,10 @@ const About = () => {
             I’m a data scientist and machine learning engineer with a strategic edge. Currently at NYU pursuing my M.S. in Data Science, I work at the intersection of advanced analytics, product thinking, and real-world impact.
           </p>
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-            From optimizing ad strategy with reinforcement learning to mapping environmental equity in public schools, I’ve built scalable systems that translate complexity into clarity. I bring a consultant’s lens to technical problems—whether leading teams, automating pipelines, or designing decision tools for stakeholders who don’t speak code.
+            From optimizing ad strategy with reinforcement learning to mapping environmental equity in public schools, I’ve built scalable systems that translate complexity into clarity. I bring a consultant’s lens to technical problems, whether leading teams, automating pipelines, or designing decision tools for stakeholders who don’t speak code.
           </p>
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-            If the challenge needs precision, empathy, and momentum—chances are, I’m already working on it.
+            If the challenge needs precision, empathy, and momentum, chances are, I’m already working on it.
           </p>
 
           {/* Contact Links */}

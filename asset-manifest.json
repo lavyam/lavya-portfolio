@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/lavya-portfolio/static/css/main.437c68e6.css",
-    "main.js": "/lavya-portfolio/static/js/main.ce954fdb.js",
+    "main.js": "/lavya-portfolio/static/js/main.ce97c94c.js",
     "static/media/lavya-profile.jpg": "/lavya-portfolio/static/media/lavya-profile.0fb4c67c9dd6d95718e9.jpg",
-    "static/media/Lavya_Resume.pdf": "/lavya-portfolio/static/media/Lavya_Resume.93150124a26b944b6646.pdf",
+    "static/media/Lavya_Resume.pdf": "/lavya-portfolio/static/media/Lavya_Resume.ed66e10d69bb277d563f.pdf",
     "index.html": "/lavya-portfolio/index.html",
     "main.437c68e6.css.map": "/lavya-portfolio/static/css/main.437c68e6.css.map",
-    "main.ce954fdb.js.map": "/lavya-portfolio/static/js/main.ce954fdb.js.map"
+    "main.ce97c94c.js.map": "/lavya-portfolio/static/js/main.ce97c94c.js.map"
   },
   "entrypoints": [
     "static/css/main.437c68e6.css",
-    "static/js/main.ce954fdb.js"
+    "static/js/main.ce97c94c.js"
   ]
 }

@@ -68,7 +68,7 @@ const About = () => {
           <div>
             <h4 className="text-xl font-semibold text-indigo-700 dark:text-indigo-300">New York University</h4>
             <p className="text-gray-600 dark:text-gray-400">M.S. in Data Science, Expected May 2026 — GPA: 3.72</p>
-            <p className="text-sm text-gray-500">Text-as-Data • Big Data • Machine Learning • Stats • Practical DS</p>
+            <p className="text-sm text-gray-500">Text-as-Data • Big Data • Machine Learning • Stats • Practical DS • ML in Finance • Database Systems</p>
           </div>
           <div>
             <h4 className="text-xl font-semibold text-indigo-700 dark:text-indigo-300">Boston University</h4>
@@ -90,6 +90,14 @@ const About = () => {
             <p className="text-gray-600 dark:text-gray-400">May 2025 – Present</p>
             <p className="text-sm text-gray-500 mt-2">
               Leading the development of an AI-powered marketing engine automating campaign strategy across Google Ads, Analytics, and Search Console. Designed models and dashboards that cut setup time from days to minutes.
+            </p>
+          </div>
+          <div className="relative border-l-2 border-indigo-400 pl-6 space-y-10">
+          <div>
+            <h4 className="text-xl font-semibold text-indigo-700 dark:text-indigo-300">Data Science Intern — Trilemma Foundation</h4>
+            <p className="text-gray-600 dark:text-gray-400">Sep 2025 – Dec 2025</p>
+            <p className="text-sm text-gray-500 mt-2">
+             Improving Bitcoin Accumulation Strategies
             </p>
           </div>
           <div>

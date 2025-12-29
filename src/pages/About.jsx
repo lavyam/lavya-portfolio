@@ -13,33 +13,58 @@ const About = () => {
         />
 
         <div className="flex-1">
-          <h1 className="text-4xl font-bold text-indigo-700 dark:text-indigo-300 mb-4">Lavya Midha</h1>
+          <h1 className="text-4xl font-bold text-indigo-700 dark:text-indigo-300 mb-4">
+            Lavya Midha
+          </h1>
+
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
             I’m a data scientist and machine learning engineer with a strategic edge. Currently at NYU pursuing my M.S. in Data Science, I work at the intersection of advanced analytics, product thinking, and real-world impact.
           </p>
+
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
             From optimizing ad strategy with reinforcement learning to mapping environmental equity in public schools, I’ve built scalable systems that translate complexity into clarity. I bring a consultant’s lens to technical problems, whether leading teams, automating pipelines, or designing decision tools for stakeholders who don’t speak code.
           </p>
+
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
             If the challenge needs precision, empathy, and momentum, chances are, I’m already working on it.
           </p>
 
           {/* Contact Links */}
           <div className="flex space-x-6 mt-4">
-            <a href="mailto:lavyamidha015@gmail.com" className="text-indigo-600 dark:text-indigo-300 hover:underline flex items-center space-x-2">
-              <Mail className="w-5 h-5" /><span>Email</span>
+            <a
+              href="mailto:lavyamidha015@gmail.com"
+              className="flex items-center space-x-2 text-indigo-600 dark:text-indigo-300 hover:underline"
+            >
+              <Mail className="w-5 h-5" />
+              <span>Email</span>
             </a>
-            <a href="https://github.com/lavyam" target="_blank" rel="noopener noreferrer" className="text-indigo-600 dark:text-indigo-300 hover:underline flex items-center space-x-2">
-              <Github className="w-5 h-5" /><span>GitHub</span>
+
+            <a
+              href="https://github.com/lavyam"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 text-indigo-600 dark:text-indigo-300 hover:underline"
+            >
+              <Github className="w-5 h-5" />
+              <span>GitHub</span>
             </a>
-            <a href="https://linkedin.com/in/lavya-midha-9ba408245" target="_blank" rel="noopener noreferrer" className="text-indigo-600 dark:text-indigo-300 hover:underline flex items-center space-x-2">
-              <Linkedin className="w-5 h-5" /><span>LinkedIn</span>
+
+            <a
+              href="https://linkedin.com/in/lavya-midha-9ba408245"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 text-indigo-600 dark:text-indigo-300 hover:underline"
+            >
+              <Linkedin className="w-5 h-5" />
+              <span>LinkedIn</span>
             </a>
           </div>
 
-          {/* Jump to Section Buttons */}
+          {/* Jump Buttons */}
           <div className="mt-10">
-            <h3 className="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4">Jump to section</h3>
+            <h3 className="text-xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4">
+              Jump to section
+            </h3>
             <div className="flex flex-wrap gap-3">
               {[
                 { label: 'Education', id: 'education-section' },
@@ -48,7 +73,9 @@ const About = () => {
               ].map(({ label, id }) => (
                 <button
                   key={id}
-                  onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() =>
+                    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+                  }
                   className="px-4 py-2 rounded-full bg-indigo-100 dark:bg-gray-700 text-indigo-700 dark:text-white text-sm font-medium hover:bg-indigo-200 dark:hover:bg-gray-600 transition"
                 >
                   {label}
@@ -64,17 +91,33 @@ const About = () => {
         <h3 className="text-2xl font-semibold flex items-center gap-2 mb-6 text-indigo-700 dark:text-indigo-300">
           <GraduationCap /> Education
         </h3>
+
         <div className="relative border-l-2 border-indigo-400 pl-6 space-y-10">
           <div>
-            <h4 className="text-xl font-semibold text-indigo-700 dark:text-indigo-300">New York University</h4>
-            <p className="text-gray-600 dark:text-gray-400">M.S. in Data Science, Expected May 2026 — GPA: 3.72</p>
-            <p className="text-sm text-gray-500">Text-as-Data • Big Data • Machine Learning • Stats • Practical DS • ML in Finance • Database Systems</p>
+            <h4 className="text-xl font-semibold text-indigo-700 dark:text-indigo-300">
+              New York University
+            </h4>
+            <p className="text-gray-600 dark:text-gray-400">
+              M.S. in Data Science, Expected May 2026 — GPA: 3.72
+            </p>
+            <p className="text-sm text-gray-500">
+              Text-as-Data • Big Data • Machine Learning • Statistics • Practical DS • ML in Finance • Database Systems
+            </p>
           </div>
+
           <div>
-            <h4 className="text-xl font-semibold text-indigo-700 dark:text-indigo-300">Boston University</h4>
-            <p className="text-gray-600 dark:text-gray-400">B.S. in Data Science, Minor in Statistics, May 2024 — GPA: 3.75</p>
-            <p className="text-sm text-gray-500">Dean’s List (All Semesters) • Research Grant Awardee</p>
-            <p className="text-sm text-gray-500">Leadership: BU Data Science Association, Admissions Ambassador, Peer Mentor</p>
+            <h4 className="text-xl font-semibold text-indigo-700 dark:text-indigo-300">
+              Boston University
+            </h4>
+            <p className="text-gray-600 dark:text-gray-400">
+              B.S. in Data Science, Minor in Statistics, May 2024 — GPA: 3.75
+            </p>
+            <p className="text-sm text-gray-500">
+              Dean’s List (All Semesters) • Research Grant Awardee
+            </p>
+            <p className="text-sm text-gray-500">
+              Leadership: BU Data Science Association, Admissions Ambassador, Peer Mentor
+            </p>
           </div>
         </div>
       </div>
@@ -84,34 +127,47 @@ const About = () => {
         <h3 className="text-2xl font-semibold flex items-center gap-2 mb-6 text-indigo-700 dark:text-indigo-300">
           <Briefcase /> Experience
         </h3>
+
         <div className="relative border-l-2 border-indigo-400 pl-6 space-y-10">
           <div>
-            <h4 className="text-xl font-semibold text-indigo-700 dark:text-indigo-300">ML Engineer — ReferU.AI</h4>
+            <h4 className="text-xl font-semibold text-indigo-700 dark:text-indigo-300">
+              ML Engineer — ReferU.AI
+            </h4>
             <p className="text-gray-600 dark:text-gray-400">May 2025 – Present</p>
             <p className="text-sm text-gray-500 mt-2">
-              Leading the development of an AI-powered marketing engine automating campaign strategy across Google Ads, Analytics, and Search Console. Designed models and dashboards that cut setup time from days to minutes.
+              • Designed and deployed a production-grade, multi-agent RAG system (LangChain + OpenAI + GCP) for citation-aware legal retrieval.
+              <br />
+              • Built a parallel QA validation framework reducing hallucinations and bias, improving factual accuracy by 22%.
             </p>
           </div>
-          <div className="relative border-l-2 border-indigo-400 pl-6 space-y-10">
+
           <div>
-            <h4 className="text-xl font-semibold text-indigo-700 dark:text-indigo-300">Data Science Intern — Trilemma Foundation</h4>
+            <h4 className="text-xl font-semibold text-indigo-700 dark:text-indigo-300">
+              Data Science Intern — Trilemma Foundation
+            </h4>
             <p className="text-gray-600 dark:text-gray-400">Sep 2025 – Dec 2025</p>
             <p className="text-sm text-gray-500 mt-2">
-             Improving Bitcoin Accumulation Strategies
+              Improving Bitcoin accumulation strategies using regime-aware adaptive DCA agents.
             </p>
           </div>
+
           <div>
-            <h4 className="text-xl font-semibold text-indigo-700 dark:text-indigo-300">Project Manager — BU Spark!</h4>
+            <h4 className="text-xl font-semibold text-indigo-700 dark:text-indigo-300">
+              Project Manager — BU Spark!
+            </h4>
             <p className="text-gray-600 dark:text-gray-400">Jan 2024 – May 2024</p>
             <p className="text-sm text-gray-500 mt-2">
-              Directed civic tech projects in voter analytics and public transparency. Introduced Agile workflows, boosting delivery velocity by 40%, and led client communication from ideation through delivery.
+              Led civic tech projects in voter analytics and public transparency. Introduced Agile workflows, boosting delivery velocity by 14%.
             </p>
           </div>
+
           <div>
-            <h4 className="text-xl font-semibold text-indigo-700 dark:text-indigo-300">Data Science RA — BU School of Public Health</h4>
+            <h4 className="text-xl font-semibold text-indigo-700 dark:text-indigo-300">
+              Data Science RA — BU School of Public Health
+            </h4>
             <p className="text-gray-600 dark:text-gray-400">Feb 2023 – Dec 2023</p>
             <p className="text-sm text-gray-500 mt-2">
-              Built real-time dashboards and regression tools for air quality monitoring in 125+ schools. Reduced data lag by 35% and introduced a CV pipeline to quantify disparities in classroom infrastructure.
+              Built dashboards and CV pipelines for air-quality monitoring across 125+ schools, reducing data latency by 35%.
             </p>
           </div>
         </div>
@@ -119,7 +175,10 @@ const About = () => {
 
       {/* Skills */}
       <div id="skills-section" className="mt-14">
-        <h3 className="text-2xl font-semibold mb-6 text-indigo-700 dark:text-indigo-300">Skills</h3>
+        <h3 className="text-2xl font-semibold mb-6 text-indigo-700 dark:text-indigo-300">
+          Skills
+        </h3>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             {
@@ -128,26 +187,28 @@ const About = () => {
             },
             {
               title: 'Machine Learning & AI',
-              items: ['Supervised / Unsupervised Learning', 'NLP', 'BERT', 'Hugging Face', 'TensorFlow', 'PyTorch', 'Keras', 'Scikit-learn', 'MLOps']
+              items: ['Supervised / Unsupervised Learning', 'NLP', 'BERT', 'Hugging Face', 'PyTorch', 'TensorFlow', 'MLOps']
             },
             {
               title: 'Data Analytics & Visualization',
-              items: ['Excel (Advanced)', 'Tableau', 'Power BI', 'Pandas', 'NumPy', 'Matplotlib', 'R Shiny', 'Python Panel', 'Looker Studio']
+              items: ['Pandas', 'NumPy', 'Matplotlib', 'Tableau', 'Power BI', 'R Shiny', 'Looker Studio']
             },
             {
               title: 'Cloud & Big Data',
-              items: ['AWS', 'Azure', 'GCP', 'Spark', 'Hadoop', 'Docker', 'ETL Pipelines', 'HPC', 'API Integration']
+              items: ['AWS', 'Azure', 'GCP', 'Spark', 'Hadoop', 'Docker', 'ETL Pipelines']
             }
           ].map((section, i) => (
             <div
               key={i}
-              className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6 border border-gray-200 dark:border-gray-700 hover:shadow-xl transition duration-300"
+              className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6 border border-gray-200 dark:border-gray-700 hover:shadow-xl transition"
             >
-              <h4 className="text-lg font-semibold text-indigo-700 dark:text-indigo-300 mb-4">{section.title}</h4>
+              <h4 className="text-lg font-semibold text-indigo-700 dark:text-indigo-300 mb-4">
+                {section.title}
+              </h4>
               <ul className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
                 {section.items.map((skill, idx) => (
-                  <li key={idx} className="flex items-start gap-2">
-                    <span className="text-indigo-500 dark:text-indigo-300">•</span>
+                  <li key={idx} className="flex gap-2">
+                    <span className="text-indigo-500">•</span>
                     <span>{skill}</span>
                   </li>
                 ))}

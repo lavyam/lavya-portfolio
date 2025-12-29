@@ -5,6 +5,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
+import Featured from './pages/Featured';
 
 const App = () => {
   return (
@@ -16,8 +17,10 @@ const App = () => {
             <Route path="/" element={<Navigate to="/about" replace />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/featured" element={<Featured />} />
             <Route path="/resume" element={<Resume />} />
             <Route path="/contact" element={<Contact />} />
+            
           </Routes>
         </main>
       </div>

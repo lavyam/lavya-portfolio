@@ -3,15 +3,42 @@ import React, { useRef } from 'react';
 const projectList = [
   {
     id: 1,
-    name: 'LavyaMidha-PyramydAI',
-    description: 'Designed an internal AI workflow demo for Pyramyd.AI, showcasing image collaging from user inputs using segmentation models. Built a responsive UI with automated backend processing to highlight real-time media manipulation capabilities.',
+    name: 'VoicePrep-AI',
+    description: 'Developed an LLM-driven interview preparation agent with real-time audio streaming and multi-agent evaluation that provides personalized, resume-, role-, and company-aware feedback to improve answer quality and structure.',
     url: 'https://github.com/lavyam/LavyaMidha-PyramydAI',
     language: 'JavaScript',
-    updated_at: '2025-05-15',
+    updated_at: '2025-10-5',
     category: 'AI Applications'
   },
   {
     id: 2,
+    name: 'LavyaMidha-PyramydAI',
+    description: 'Designed an internal AI workflow demo for Pyramyd.AI, showcasing image collaging from user inputs using segmentation models. Built a responsive UI with automated backend processing to highlight real-time media manipulation capabilities.',
+    url: 'https://github.com/lavyam/LavyaMidha-PyramydAI',
+    language: 'Python',
+    updated_at: '2025-05-15',
+    category: 'AI Applications'
+  },
+  { id: 3,
+    name: 'Predicting the Probability of Default for Banca Massiaca',
+    description: "Created an end-to-end PD modeling system for SME credit risk, integrating extensive ratio engineering, XGBoost modeling, and advanced calibration (Laplace, bucket mapping) to produce accurate, well-behaved PDs validated via OOT splits and AUC/KS/Brier diagnostics.",
+    url: 'https://lavyam.github.io/lavya-portfolio/public/PD_Finance.pdf',
+    language: 'Python, Finance',
+    updated_at: '2025-12-24',
+    category: 'Finance'
+
+  },
+  { id: 4,
+    name: 'Trilemma Foundation',
+    description: "Built a multi-agent system for bitcoin accumulation in which learning-based agents detect market regimes, forecast short-term risk, and adjust DCA schedules in real time to maximize accumulated BTC across varying market conditions.",
+    url: ' https://nyu-msds-f25-btc-lai3xqyyyusrct63ebr63w.streamlit.app',
+    language: 'Python, Finance, Streamlit',
+    updated_at: '2025-12-24',
+    category: 'Finance'
+  },
+  
+  {
+    id: 5,
     name: 'Humor-Detection',
     description: 'Developed a machine learning pipeline to classify tweets as humorous or non-humorous. Leveraged TF-IDF feature extraction and ensemble models, evaluated through cross-validation and performance metrics.',
     url: 'https://github.com/lavyam/Humor-Detection',
@@ -20,7 +47,7 @@ const projectList = [
     category: 'NLP'
   },
   {
-    id: 3,
+    id: 6,
     name: 'Covid-19-Analysis',
     description: 'Conducted global COVID-19 trend analysis by visualizing infection rates, death counts, and testing data. Built interactive plots to highlight cross-country comparisons and policy effectiveness over time.',
     url: 'https://github.com/ShimonDasgupta/Covid-19-Analysis',
@@ -29,7 +56,7 @@ const projectList = [
     category: 'Data Analysis'
   },
   {
-    id: 4,
+    id: 7,
     name: 'Transformer-based-summarization',
     description: 'Fine-tuned a BART-based transformer for abstractive summarization on article datasets. Implemented tokenization, beam search decoding, and ROUGE score evaluation to optimize summary quality.',
     url: 'https://github.com/lavyam/Transformer-based-summarization',
@@ -38,7 +65,7 @@ const projectList = [
     category: 'NLP'
   },
   {
-    id: 5,
+    id: 8,
     name: 'ds4g-riseup-police-detail',
     description: 'Analyzed Boston Police Department overtime budgets using city expense logs and incident-level data. Produced insights and policy briefs advocating reallocation of public resources toward underfunded community services.',
     url: 'https://github.com/BU-Spark/ds4g-riseup-police-detail',
@@ -47,7 +74,7 @@ const projectList = [
     category: 'Civic Analytics'
   },
   {
-    id: 6,
+    id: 9,
     name: 'Facebook_Mutual_friends',
     description: 'Simulated mutual friend discovery in a synthetic social network using adjacency matrix representations. Implemented efficient search algorithms to compute shared connections in large-scale graphs.',
     url: 'https://github.com/lavyam/Facebook_Mutual_friends',
@@ -56,7 +83,7 @@ const projectList = [
     category: 'Social Network Analysis'
   },
   {
-    id: 7,
+    id: 10,
     name: 'NYC_Subway_Ridership_sentiment_analysis',
     description: 'Analyzed public sentiment toward NYC Subway services using Twitter data. Preprocessed tweets, performed sentiment scoring using VADER and RoBERTa, and correlated findings with MTA ridership metrics. The study revealed how online discourse aligns with actual ridership trends, offering insight for transit planning.',
     url: 'https://github.com/lavyam/NYC_Subway_Ridership_sentiment_analysis',
@@ -65,7 +92,7 @@ const projectList = [
     category: 'NLP'
   },
   {
-    id: 8,
+    id: 11,
     name: 'Americans, Trust & Twitter (Sussman Lab)',
     description: 'Created a data-driven narrative exploring Americans’ trust in government and Twitter as news sources, using Pew survey data and political predictors. Built an interactive story using R Markdown with embedded visualizations, showing how party affiliation, citizenship, and region influence public sentiment. Conducted regression analysis, regional mapping, and comparative studies.',
     url: '',
@@ -74,7 +101,7 @@ const projectList = [
     category: 'Research'
   },
   {
-    id: 9,
+    id: 12,
     name: 'MovieLens Recommender & Segmentation (Big Data Capstone)',
     description: 'Built a collaborative filtering and customer segmentation pipeline using the 33M-rating MovieLens dataset. Applied MinHash-based similarity, validated user “twins” using Pearson correlation, and trained an ALS recommender with cold-start extensions via tag-genome regression. Evaluated all models with ranking metrics like Precision@100, MAP, and NDCG.',
     url: 'https://lavyam.github.io/lavya-portfolio/Big%20Data%20Capstone%20Report%20-%20Team%2029.pdf',
@@ -83,7 +110,7 @@ const projectList = [
     category: 'Research'
   },
   {
-    id: 10,
+    id: 13,
     name: 'BU Spark! Demo Day – Unconscious Bias Training Manual',
     description: 'Showcased an equity-focused digital training manual for tech companies at BU Spark! Demo Day. The project aims to combat unconscious bias in the workplace through a $5 subscription model, with waivers available for small businesses to ensure accessibility. The manual combines behavioral research, inclusive design, and policy guidance.',
     url: 'https://www.bu.edu/spark/2022/12/20/demo-day-fall-2022/',
@@ -91,6 +118,8 @@ const projectList = [
     updated_at: '2022-12-20',
     category: 'Publications'
   }
+  
+
 ];
 
 // Group projects by category

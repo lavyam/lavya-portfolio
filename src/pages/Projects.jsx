@@ -22,7 +22,7 @@ const projectList = [
   { id: 3,
     name: 'Predicting the Probability of Default for Banca Massiaca',
     description: "Created an end-to-end PD modeling system for SME credit risk, integrating extensive ratio engineering, XGBoost modeling, and advanced calibration (Laplace, bucket mapping) to produce accurate, well-behaved PDs validated via OOT splits and AUC/KS/Brier diagnostics.",
-    url: 'https://lavyam.github.io/lavya-portfolio/public/PD_Finance.pdf',
+    url: 'https://lavyam.github.io/lavya-portfolio/PD_Finance.pdf',
     language: 'Python, Finance',
     updated_at: '2025-12-24',
     category: 'Finance'

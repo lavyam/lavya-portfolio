@@ -98,7 +98,7 @@ const About = () => {
               New York University
             </h4>
             <p className="text-gray-600 dark:text-gray-400">
-              M.S. in Data Science, Expected May 2026 — GPA: 3.72
+              M.S. in Data Science, Expected May 2026 — GPA: 3.815
             </p>
             <p className="text-sm text-gray-500">
               Text-as-Data • Big Data • Machine Learning • Statistics • Practical DS • ML in Finance • Database Systems
